@@ -1,0 +1,61 @@
+# HOT DOG GRUB THEME
+# Horrible Obsolete Typeface and Dreadful Onscreen Graphics
+# dla fanmad z miłości do musztardy
+
+title-text: ""
+desktop-image: "background.png"
+desktop-color: "#dc1e1e"
+
+# Główne menu
++ boot_menu {
+  left   = 50%-240
+  top    = 50%-120
+  width  = 480
+  height = 240
+
+  item_font             = "Unknown Regular 18"
+  item_color            = "#ffffff"
+  selected_item_color   = "#ffe100"
+  selected_item_pixmap  = "selected_item.png"
+
+  menu_pixmap           = "menu_bg.png"
+
+  item_height  = 48
+  item_padding = 10
+  item_spacing = 4
+
+  scrollbar             = true
+  scrollbar_width       = 12
+  scrollbar_thumb       = "scrollbar_thumb.png"
+  scrollbar_frame       = "scrollbar_frame.png"
+  icon_width            = 40
+  icon_height           = 40
+}
+
+# Napis tytułowy
++ label {
+  top    = 50%-160
+  left   = 50%-240
+  width  = 480
+  height = 32
+  text   = "Select your OS"
+  font   = "Unknown Regular 16"
+  color  = "#ffffff"
+  align  = "center"
+}
+
+# Pasek odliczania
++ progress_bar {
+  id           = "__timeout__"
+  left         = 50%-240
+  top          = 50%+140
+  width        = 480
+  height       = 16
+  show_text    = true
+  text         = "Auto booting in %d seconds"
+  font         = "Unknown Regular 14"
+  text_color   = "#ffffff"
+  fg_color     = "#ddff00"
+  bg_color     = "#dc1e1e"
+  border_color = "#000000"
+}
